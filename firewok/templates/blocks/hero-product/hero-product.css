@@ -1,0 +1,70 @@
+.hero-product.alignfull {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw); }
+
+.storefront-align-wide.storefront-full-width-content
+.hentry .entry-content .hero-product.alignfull {
+  padding: 0px; }
+
+.hero-product .container {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .hero-product .container {
+      height: 0px;
+      padding-top: 75%;
+      position: relative; } }
+  .hero-product .container .hero-content {
+    background: black; }
+    @media screen and (min-width: 768px) {
+      .hero-product .container .hero-content {
+        background: transparent;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute; } }
+  .hero-product .container .col-full {
+    height: 100%;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .hero-product .container .col-full {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr; } }
+    .hero-product .container .col-full .text-container {
+      padding: 1em 2.08333333333vw;
+      margin: 0em;
+      grid-area: 3 / 3;
+      align-self: center; }
+      .hero-product .container .col-full .text-container h3, .hero-product .container .col-full .text-container p {
+        color: white; }
+    .hero-product .container .col-full .button.cta {
+      background: transparent;
+      transition: color 0.2s, background 0.2s;
+      border: 2px solid white;
+      color: white; }
+      .hero-product .container .col-full .button.cta:hover {
+        color: black;
+        background: white; }
+  .hero-product .container .hero-img {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .hero-product .container .hero-img {
+        width: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute; } }
+    .hero-product .container .hero-img img {
+      filter: grayscale(1);
+      object-fit: cover;
+      object-position: 50% 90%;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: filter 0.5s; }
+      .hero-product .container .hero-img img.color {
+        filter: grayscale(0); }
+  .hero-product .container .hero-product.is-admin img {
+    height: 100% !important; }

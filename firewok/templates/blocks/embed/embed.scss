@@ -1,0 +1,48 @@
+$break-small:425px;
+$break-large: 768px;
+$full-width: 66.4989378333em;
+$two-thirds-width: 44.3326252222em;
+
+
+.firewok-embed{
+	padding: 3em 0;
+	&.alignfull {
+	    margin-left: calc(50% - 50vw);
+	    margin-right: calc(50% - 50vw);
+	    .embed-container{
+	    	margin: 0 2.617924em; /* re-create col-full */
+	    	@media screen and (min-width: $break-large){
+				margin: auto;
+			}
+	    }
+	}
+}
+
+.embed-container{
+	position: relative; 
+	padding-bottom: 56.25%;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+	@media screen and (min-width: $break-small){
+		max-width: $two-thirds-width;
+	}
+
+	@media screen and (min-width: $break-large){
+		padding-bottom: calc(66.4989378333em * 0.5625);
+	}
+
+	iframe,
+	object,
+	embed{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
+
+}
+
