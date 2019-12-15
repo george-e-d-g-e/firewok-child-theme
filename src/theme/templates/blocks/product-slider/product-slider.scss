@@ -1,0 +1,120 @@
+
+$break-small:425px;
+$break-large: 768px;
+$gap: 2.08333333333vw;
+$half-gap: 1.04166666667vw; 
+$full-width: 66.4989378333em;
+$two-thirds-width: 44.3326252222em;
+
+.product-slider{
+
+	.slide{
+
+		background: white;
+
+		@media screen and (min-width: $break-large){
+			display: grid;
+			grid-template-columns: 0.5fr 1fr 1fr 0.5fr; //33.33 em 
+			grid-template-rows: auto;
+			grid-template-areas: "start text image end";
+		}
+	
+		.text-container{
+			color: black;
+			grid-area: text;
+			align-self: center;
+			padding: 0 2.08333333333vw;
+		    margin: 1em 0;
+		    position: relative;
+			h2{
+				@media screen and (min-width: $break-large){
+					font-size: 3em;
+				}
+				margin: 0px;
+			}
+			h3 {
+				font-size: 1.2em;
+				@media screen and (min-width: $break-large){
+					font-size: 1.618em;
+				}
+				font-weight: 400;
+				border-top: none;
+				padding: 0;
+			}
+
+			a.button{
+				background: white;
+				border: 2px solid black;
+				color: black;
+				transition: border-color 0.2s, color 0.2s;
+				&:hover{
+					border-color: #b80012;
+					color: #b80012;
+				}
+			}
+		}
+
+		.product-image{
+			grid-area: image;
+			align-self: center;
+			.img-container{
+				
+			    width: 66.66%;
+				margin: auto;
+
+    			@media screen and (min-width: $break-large){
+				    width:auto;
+    				margin: 0;
+    			}
+
+				img{
+					object-position: center;
+				}
+			}
+		}
+
+		&:focus{
+			outline: none;	
+		} 
+
+	}
+
+	.slick-prev,
+	.slick-next{&:focus{
+		outline: none;	
+	} 
+		
+		
+	  	&:before{
+	    	color: black;
+	    	font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+	    }
+		&:hover:before{
+			color: #b80012;
+		}
+
+	}
+
+	.slick-prev,
+	.slick-next {
+		z-index: 1;
+		top: 25%;
+		@media screen and (min-width: $break-large){
+			top: 50%;
+		}
+	}
+
+	.slick-prev{
+		left: 0px;	
+    	&:before{
+    		content: "\f053";
+    	}
+	}
+	.slick-next{
+		right: 0px;	
+    	&:before{
+    		content: "\f054";
+    	}
+	}
+}

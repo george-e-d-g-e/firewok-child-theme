@@ -1,0 +1,103 @@
+/*
+* Shop Page
+*/
+
+$base-color: #000000;
+$highlight: #b80016;
+
+.shop-menu{
+	text-align: left;
+	list-style: none;
+
+	a {
+ 		color: $highlight;
+ 		&:hover {
+ 			color: $base-color;
+ 		}
+	}
+}
+
+.storefront-full-width-content .woocommerce-products-header{
+	text-align: left;
+	margin: 0 2.08333333333vw;
+}
+
+.wp-block-woocommerce-product-category{
+	margin: 0 -2.08333333333vw;
+}
+
+.storefront-sorting{
+	display: none;
+}
+
+/* Items*/
+
+ul.wc-block-grid__products li.wc-block-grid__product,
+ul.products li.product{
+
+	.wp-block-button,
+	.button {
+	    margin-bottom: .236em;
+	    background: white;
+	    transition: color 0.2s, border-color 0.2s;
+	    border: 2px solid $base-color;
+	    color: $base-color;
+	    display: inline-block;
+
+	    &:hover {
+	    	color: $highlight;
+	    	border-color: $highlight;
+	    }
+	}
+
+	
+	.woocommerce-Price-amount{
+		color: #000000;
+	}
+
+	a {
+	    
+	    transition-timing-function: ease-out;
+	    
+	    img{
+	    	// filter: grayscale(1.0);
+			// transition: transform 0.2s, filter 0.2s;
+		}
+
+		.wc-block-grid__product-title,
+		h2,
+		.price{
+			transition: color 0.2s;
+			color: $base-color;
+		}
+
+		h2.woocommerce-loop-product__title {
+			font-size: 1.2rem;
+			font-weight: 900;
+		}
+
+	    &:hover {
+
+	    	img{
+	    		// filter: grayscale(0);
+	    		// transform: scale(1.1);
+	    	}
+
+	    	h2,
+			.price,
+			.star-rating::before{
+				color: $highlight;
+			}
+	    }
+
+	    &.wp-block-button__link{
+	    	border-radius: 0px;
+	    	background: white;
+	    	color: #000000;
+	    	&:hover{
+	    		color: $highlight;
+	    	}
+	    }
+	}
+
+}

@@ -1,0 +1,29 @@
+.firewok-cover-page{
+	position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    .cover-wrapper{
+    	margin: auto;
+    	.logo{
+	    	margin: 0px auto;
+	    	padding-bottom: 0px;
+	    	max-width: 150px;
+	    }
+	    .site-title {
+			font-family: "Typewriter Oldstyle";
+			text-align: center;
+		}
+		h2{
+			text-align: center; 
+			font-size: 1.5em;
+			font-weight: normal;
+			margin-top: 3em;
+		}
+    }
+    
+}

@@ -1,0 +1,165 @@
+$break-small:425px;
+$break-large: 768px;
+$full-width: 66.4989378333em;
+$two-thirds-width: 44.3326252222em;
+
+ /* Fonts */
+@font-face {
+	font-family: 'Typewriter Oldstyle';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Typewriter Oldstyle'), url('./fonts/typeo___.woff') format('woff');
+}
+
+/* MISC */
+
+body, button, input, textarea {
+	font-family: 'PT Serif', serif;
+	/*font-size: 18px;*/
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: #000000;
+}
+
+a{
+	-webkit-tap-highlight-color:transparent;
+}
+
+#content{
+	margin: 100px 0px 0px 0px;
+	@media screen and (min-width: $break-large){
+		margin: 200px 0px 0px 0px;
+	}	
+	font-size: 16px;
+}
+
+a:focus, input:focus, textarea:focus, button:focus{
+	outline: 0px;
+}
+
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"], 
+.button, 
+.widget a.button{
+	
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	color: #000000;
+	
+    &:hover:not(.slick-arrow){
+    	background-color: #ffffff;
+    	border: 2px solid #b80016;
+    	color: #b80016;
+    }
+
+     &[role="tab"]:hover{
+     	border: none;
+
+     }
+
+}
+
+p{ 
+	color: black;
+ }
+
+a {
+	color: #b80016;
+}
+
+img {
+	border-radius: 0%;
+}
+
+h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+/* Store-Front */
+
+.storefront-handheld-footer-bar{
+	 display: none;
+}
+
+.storefront-handheld-footer-bar ul.columns-3 li {
+	width: 50%;
+}
+
+.storefront-handheld-footer-bar ul.columns-3 li.search {
+	display: none;
+}
+
+
+.hentry.type-page .entry-header{
+	display: none;
+}
+
+.entry-content{
+	margin-top: 0em;
+}
+
+/*.star-rating::before {
+	font-family: fire;
+	color: #b80016;
+}
+
+.star-rating span::before {
+	font-family: fire;
+	color: #b80016;
+}
+
+.star-rating {
+	margin-bottom: 1em;
+}*/
+
+.feature ul.products li.product{
+	width: 100%;
+}
+
+.col-1 .embed-container{
+	max-width: 64.5833333333vw;
+}
+
+/* Forms */
+
+input[type='text'], 
+input[type='number'], 
+input[type='email'], 
+input[type='tel'], 
+input[type='url'], 
+input[type='password'], 
+input[type='search'], 
+textarea, 
+.input-text {
+    background-color: #ffffff;
+    color: black;
+    box-shadow: none;
+    border: 2px solid black;
+    border-radius: 0px;
+    &:focus {
+    	background-color: white;
+    	border-color: #b80016;
+    	color: #b80016;
+    }
+}
+
+.woocommerce-info, .woocommerce-noreviews, p.no-comments {
+    background-color: #000000;
+    border-radius: 0px;
+}
+
+// My Account 
+
+.woocommerce-MyAccount-navigation-link a {
+	color: #000000;
+	&:hover{
+		color: #b80016;
+	}
+}
+
+.storefront-breadcrumb{
+	display: none;
+}

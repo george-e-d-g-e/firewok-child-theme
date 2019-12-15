@@ -1,0 +1,65 @@
+
+fieldset{
+
+	padding: 1.618em 0px;
+
+	.mwb_crp_referral_link{
+		display: block;
+		color: black;
+	}
+	code {
+		background: white;
+		border: 2px solid #000000;
+		color: #000000;
+		padding: 1em;
+		display: inline-block;
+	}
+
+	.mwb_crp_wrapper_button{
+		margin: 1em;
+	}
+}
+
+
+.mwb-crp-referral-column-inner{
+	background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    border-radius: 0px;
+    h4 {
+    	color: #000000;
+    }
+}
+
+
+.mwb-crp-referral-table-wrapper {
+	margin-bottom: 3em;
+	.mwb-crp-referral-table{
+		.mwb-crp-coupon-code{
+			background-color: #ffffff;
+		    color: #b80012;
+
+		    &::after{
+		    	border: 2px solid #000000;
+		    }
+
+		    .mwb-crp-coupon-btn-copy:hover {
+				border: none;
+			}
+		}
+	} 
+}
+
+.mwb-crp-referral-table-wrapper .mwb-crp-referral-table thead th{
+	background-color: #000000;
+}
+
+
+.mwb-crp-coupon-scissors{
+	display: none;
+}
+
+#mwb-crp-referral-table_paginate span a{
+	background: #ffffff;
+}
